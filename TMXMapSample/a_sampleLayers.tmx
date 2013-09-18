@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="8" height="8" tilewidth="64" tileheight="64">
+ <tileset firstgid="1" name="tiles" tilewidth="64" tileheight="64" spacing="2" margin="1">
+  <image source="caveAtlas.png" width="134" height="134"/>
+  <tile id="0">
+   <properties>
+    <property name="1st" value="First tile property"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="2nd" value="second tile property"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="3rd" value="Third tile property"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="4th" value="fourth tile property"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="5" name="scary_morguefile" tilewidth="1024" tileheight="768">
+  <image source="scary_morguefile.jpg" width="1024" height="768"/>
+  <tile id="0">
+   <properties>
+    <property name="First property" value="none"/>
+    <property name="second property" value="none2"/>
+   </properties>
+  </tile>
+ </tileset>
+ <imagelayer name="Background crazy image" width="8" height="8">
+  <image source="scary_morguefile.jpg" trans="a40c0c"/>
+ </imagelayer>
+ <layer name="Dark Grey Border" width="8" height="8">
+  <properties>
+   <property name="layerProp1" value="ONE"/>
+   <property name="layerProp2" value="TWO"/>
+   <property name="layerProp3" value="THREE"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NkYGBgJIBxAVzyzATkCemntjw+DABXOyzQAAEAAA==
+  </data>
+ </layer>
+ <layer name="Brown outer border" width="8" height="8">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgIAyYcGBkeWx66CmPz334AAAJpquBAAEAAA==
+  </data>
+ </layer>
+ <layer name="Blue water border" width="8" height="8">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoA5gRsPY5LGxSZHHZz65AACQlrALAAEAAA==
+  </data>
+ </layer>
+ <objectgroup name="offset dark grey blocks" width="8" height="8">
+  <object name="Partial Cover" gid="1" x="288" y="352"/>
+  <object gid="1" x="320" y="384"/>
+ </objectgroup>
+ <layer name="center 4 squares" width="8" height="8">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoB9ggWJy5WkBANl680YAAQAA
+  </data>
+ </layer>
+ <objectgroup name="blue offset square and invisibles" width="8" height="8">
+  <object name="object 1" type="type1" x="128" y="128" width="64" height="64">
+   <properties>
+    <property name="objProp1" value="noValue"/>
+   </properties>
+  </object>
+  <object name="object 2" type="type2" x="192" y="128" width="128" height="64">
+   <properties>
+    <property name="Object property" value="property value"/>
+   </properties>
+  </object>
+  <object name="object3" type="type3" x="384" y="128" width="64" height="64">
+   <properties>
+    <property name="Object 3" value="obj3PropValue"/>
+   </properties>
+  </object>
+  <object name="negObject" type="negType" x="-128" y="-192" width="64" height="64">
+   <properties>
+    <property name="negProp" value="prop"/>
+   </properties>
+  </object>
+  <object name="tileObj1" type="tileObjType1" gid="3" x="160" y="96">
+   <properties>
+    <property name="tileObjProperty" value="tileObjPropertyValue"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

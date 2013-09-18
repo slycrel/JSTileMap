@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F0F81991768146E006F5FB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0F81981768146E006F5FB9 /* Foundation.framework */; };
+		3F0F819B1768146E006F5FB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0F819A1768146E006F5FB9 /* CoreGraphics.framework */; };
+		3F0F819D1768146E006F5FB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0F819C1768146E006F5FB9 /* UIKit.framework */; };
+		3F0F819F1768146E006F5FB9 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0F819E1768146E006F5FB9 /* SpriteKit.framework */; };
+		3F0F81A51768146E006F5FB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F0F81A31768146E006F5FB9 /* InfoPlist.strings */; };
+		3F0F81A71768146E006F5FB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F81A61768146E006F5FB9 /* main.m */; };
+		3F0F81AB1768146E006F5FB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F81AA1768146E006F5FB9 /* AppDelegate.m */; };
+		3F0F81AE1768146E006F5FB9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0F81AC1768146E006F5FB9 /* Main_iPhone.storyboard */; };
+		3F0F81B11768146E006F5FB9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0F81AF1768146E006F5FB9 /* Main_iPad.storyboard */; };
+		3F0F81B41768146E006F5FB9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F81B31768146E006F5FB9 /* ViewController.m */; };
+		3F0F81B71768146E006F5FB9 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F81B61768146E006F5FB9 /* MyScene.m */; };
+		3F0F81BB1768146E006F5FB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0F81BA1768146E006F5FB9 /* Images.xcassets */; };
+		3F0F81C21768146E006F5FB9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0F81C11768146E006F5FB9 /* XCTest.framework */; };
+		3F0F81C31768146E006F5FB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0F81981768146E006F5FB9 /* Foundation.framework */; };
+		3F0F81C41768146E006F5FB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0F819C1768146E006F5FB9 /* UIKit.framework */; };
+		3F0F81CC1768146E006F5FB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F0F81CA1768146E006F5FB9 /* InfoPlist.strings */; };
+		3F0F81CE1768146E006F5FB9 /* TMXMapSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F81CD1768146E006F5FB9 /* TMXMapSampleTests.m */; };
+		3F0F81DD17681C93006F5FB9 /* LFCGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F81DB17681C93006F5FB9 /* LFCGzipUtility.m */; };
+		3F0F81E317681E36006F5FB9 /* cobbleset-64_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0F81E117681E36006F5FB9 /* cobbleset-64_0.png */; };
+		3F0F81E417681E36006F5FB9 /* sample.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3F0F81E217681E36006F5FB9 /* sample.tmx */; };
+		3F0F81E617681F28006F5FB9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0F81E517681F28006F5FB9 /* libz.dylib */; };
+		3F0F81E717681F40006F5FB9 /* JSTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F81E017681D0E006F5FB9 /* JSTileMap.m */; };
+		3F7870AB17B71AB300A11438 /* Base64-uncompressed.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3F7870AA17B7198700A11438 /* Base64-uncompressed.tmx */; };
+		3F7CD7F3176AB08A008EF0BC /* sample2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3F7CD7F0176AB08A008EF0BC /* sample2.tmx */; };
+		3F7CD7F4176AB08A008EF0BC /* sample3.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3F7CD7F1176AB08A008EF0BC /* sample3.tmx */; };
+		3F7CD7F5176AB08A008EF0BC /* basic texture test.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F7CD7F2176AB08A008EF0BC /* basic texture test.png */; };
+		3F8BCB7E1770141A00E3A62C /* sampleCave.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3F8BCB7B1770141A00E3A62C /* sampleCave.tmx */; };
+		3F8BCB7F1770141A00E3A62C /* caveAtlas.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F8BCB7C1770141A00E3A62C /* caveAtlas.png */; };
+		3F8BCB881770143800E3A62C /* sampleMarsh.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3F8BCB811770143800E3A62C /* sampleMarsh.tmx */; };
+		3F8BCB891770143800E3A62C /* sampleNoisyLakes.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3F8BCB821770143800E3A62C /* sampleNoisyLakes.tmx */; };
+		3F8BCB8A1770143800E3A62C /* tileEdges.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F8BCB831770143800E3A62C /* tileEdges.png */; };
+		3F8BCB8B1770143800E3A62C /* tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F8BCB841770143800E3A62C /* tiles.png */; };
+		3F8BCB8C1770143800E3A62C /* tileEdges2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F8BCB851770143800E3A62C /* tileEdges2.png */; };
+		3F8BCB8D1770143800E3A62C /* tiles2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F8BCB861770143800E3A62C /* tiles2.png */; };
+		3F8BCB8E1770143800E3A62C /* sampleIslands.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3F8BCB871770143800E3A62C /* sampleIslands.tmx */; };
+		3F8BCB90177025AA00E3A62C /* a_sampleLayers.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3F8BCB8F177025AA00E3A62C /* a_sampleLayers.tmx */; };
+		3F8BCB92177025CC00E3A62C /* XMLSampleLayers.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3F8BCB91177025CC00E3A62C /* XMLSampleLayers.tmx */; };
+		3FB13A3417BC668A007D9DB9 /* black-spade-md.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB13A3317BC668A007D9DB9 /* black-spade-md.png */; };
+		3FDB949F178710C700230D5C /* iso-test-1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB949D178710C700230D5C /* iso-test-1.tmx */; };
+		3FDB94A0178710C700230D5C /* iso-64x64-outside.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB949E178710C700230D5C /* iso-64x64-outside.png */; };
+		3FDB94A21787139700230D5C /* iso-test-2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB94A11787133A00230D5C /* iso-test-2.tmx */; };
+		3FDB94A5178FA4AE00230D5C /* scary_morguefile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB94A4178FA4AE00230D5C /* scary_morguefile.jpg */; };
+		95F55C5017716A0500828C7A /* multi-tileset.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 95F55C4F17716A0500828C7A /* multi-tileset.tmx */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F0F81C51768146E006F5FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F0F818D1768146E006F5FB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F0F81941768146E006F5FB9;
+			remoteInfo = TMXMapSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F0F81951768146E006F5FB9 /* TMXMapSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMXMapSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0F81981768146E006F5FB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3F0F819A1768146E006F5FB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3F0F819C1768146E006F5FB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3F0F819E1768146E006F5FB9 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		3F0F81A21768146E006F5FB9 /* TMXMapSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMXMapSample-Info.plist"; sourceTree = "<group>"; };
+		3F0F81A41768146E006F5FB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F0F81A61768146E006F5FB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F0F81A81768146E006F5FB9 /* TMXMapSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMXMapSample-Prefix.pch"; sourceTree = "<group>"; };
+		3F0F81A91768146E006F5FB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F0F81AA1768146E006F5FB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F0F81AD1768146E006F5FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		3F0F81B01768146E006F5FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		3F0F81B21768146E006F5FB9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3F0F81B31768146E006F5FB9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F0F81B51768146E006F5FB9 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		3F0F81B61768146E006F5FB9 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		3F0F81BA1768146E006F5FB9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F0F81C01768146E006F5FB9 /* TMXMapSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMXMapSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0F81C11768146E006F5FB9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3F0F81C91768146E006F5FB9 /* TMXMapSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMXMapSampleTests-Info.plist"; sourceTree = "<group>"; };
+		3F0F81CB1768146E006F5FB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F0F81CD1768146E006F5FB9 /* TMXMapSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMXMapSampleTests.m; sourceTree = "<group>"; };
+		3F0F81DA17681C93006F5FB9 /* LFCGzipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCGzipUtility.h; sourceTree = "<group>"; };
+		3F0F81DB17681C93006F5FB9 /* LFCGzipUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCGzipUtility.m; sourceTree = "<group>"; };
+		3F0F81DF17681D0E006F5FB9 /* JSTileMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTileMap.h; sourceTree = "<group>"; };
+		3F0F81E017681D0E006F5FB9 /* JSTileMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSTileMap.m; sourceTree = "<group>"; };
+		3F0F81E117681E36006F5FB9 /* cobbleset-64_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cobbleset-64_0.png"; sourceTree = "<group>"; };
+		3F0F81E217681E36006F5FB9 /* sample.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample.tmx; sourceTree = "<group>"; };
+		3F0F81E517681F28006F5FB9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3F78704D17AD849200A11438 /* TODO.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
+		3F7870AA17B7198700A11438 /* Base64-uncompressed.tmx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Base64-uncompressed.tmx"; sourceTree = "<group>"; };
+		3F7CD7F0176AB08A008EF0BC /* sample2.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample2.tmx; sourceTree = "<group>"; };
+		3F7CD7F1176AB08A008EF0BC /* sample3.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample3.tmx; sourceTree = "<group>"; };
+		3F7CD7F2176AB08A008EF0BC /* basic texture test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basic texture test.png"; sourceTree = "<group>"; };
+		3F8BCB7B1770141A00E3A62C /* sampleCave.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sampleCave.tmx; sourceTree = "<group>"; };
+		3F8BCB7C1770141A00E3A62C /* caveAtlas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = caveAtlas.png; sourceTree = "<group>"; };
+		3F8BCB811770143800E3A62C /* sampleMarsh.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sampleMarsh.tmx; sourceTree = "<group>"; };
+		3F8BCB821770143800E3A62C /* sampleNoisyLakes.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sampleNoisyLakes.tmx; sourceTree = "<group>"; };
+		3F8BCB831770143800E3A62C /* tileEdges.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileEdges.png; sourceTree = "<group>"; };
+		3F8BCB841770143800E3A62C /* tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiles.png; sourceTree = "<group>"; };
+		3F8BCB851770143800E3A62C /* tileEdges2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileEdges2.png; sourceTree = "<group>"; };
+		3F8BCB861770143800E3A62C /* tiles2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiles2.png; sourceTree = "<group>"; };
+		3F8BCB871770143800E3A62C /* sampleIslands.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sampleIslands.tmx; sourceTree = "<group>"; };
+		3F8BCB8F177025AA00E3A62C /* a_sampleLayers.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = a_sampleLayers.tmx; sourceTree = "<group>"; };
+		3F8BCB91177025CC00E3A62C /* XMLSampleLayers.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = XMLSampleLayers.tmx; sourceTree = "<group>"; };
+		3FB13A3317BC668A007D9DB9 /* black-spade-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black-spade-md.png"; sourceTree = "<group>"; };
+		3FDB949D178710C700230D5C /* iso-test-1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "iso-test-1.tmx"; sourceTree = "<group>"; };
+		3FDB949E178710C700230D5C /* iso-64x64-outside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iso-64x64-outside.png"; sourceTree = "<group>"; };
+		3FDB94A11787133A00230D5C /* iso-test-2.tmx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "iso-test-2.tmx"; sourceTree = "<group>"; };
+		3FDB94A317871E2300230D5C /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		3FDB94A4178FA4AE00230D5C /* scary_morguefile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scary_morguefile.jpg; sourceTree = "<group>"; };
+		95F55C4F17716A0500828C7A /* multi-tileset.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "multi-tileset.tmx"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F0F81921768146E006F5FB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0F81E617681F28006F5FB9 /* libz.dylib in Frameworks */,
+				3F0F819B1768146E006F5FB9 /* CoreGraphics.framework in Frameworks */,
+				3F0F819D1768146E006F5FB9 /* UIKit.framework in Frameworks */,
+				3F0F819F1768146E006F5FB9 /* SpriteKit.framework in Frameworks */,
+				3F0F81991768146E006F5FB9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0F81BD1768146E006F5FB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0F81C21768146E006F5FB9 /* XCTest.framework in Frameworks */,
+				3F0F81C41768146E006F5FB9 /* UIKit.framework in Frameworks */,
+				3F0F81C31768146E006F5FB9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F0F818C1768146E006F5FB9 = {
+			isa = PBXGroup;
+			children = (
+				3F0F81D717681C86006F5FB9 /* External */,
+				3F0F81A01768146E006F5FB9 /* TMXMapSample */,
+				3F0F81C71768146E006F5FB9 /* TMXMapSampleTests */,
+				3F0F81971768146E006F5FB9 /* Frameworks */,
+				3F0F81961768146E006F5FB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F0F81961768146E006F5FB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F0F81951768146E006F5FB9 /* TMXMapSample.app */,
+				3F0F81C01768146E006F5FB9 /* TMXMapSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F0F81971768146E006F5FB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F0F81E517681F28006F5FB9 /* libz.dylib */,
+				3F0F81981768146E006F5FB9 /* Foundation.framework */,
+				3F0F819A1768146E006F5FB9 /* CoreGraphics.framework */,
+				3F0F819C1768146E006F5FB9 /* UIKit.framework */,
+				3F0F819E1768146E006F5FB9 /* SpriteKit.framework */,
+				3F0F81C11768146E006F5FB9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F0F81A01768146E006F5FB9 /* TMXMapSample */ = {
+			isa = PBXGroup;
+			children = (
+				3F7CD7EF176AB075008EF0BC /* sample maps */,
+				3F0F81DE17681CE9006F5FB9 /* JSTileMap */,
+				3F0F81A91768146E006F5FB9 /* AppDelegate.h */,
+				3F0F81AA1768146E006F5FB9 /* AppDelegate.m */,
+				3F0F81AC1768146E006F5FB9 /* Main_iPhone.storyboard */,
+				3F0F81AF1768146E006F5FB9 /* Main_iPad.storyboard */,
+				3F0F81B21768146E006F5FB9 /* ViewController.h */,
+				3F0F81B31768146E006F5FB9 /* ViewController.m */,
+				3F0F81B51768146E006F5FB9 /* MyScene.h */,
+				3F0F81B61768146E006F5FB9 /* MyScene.m */,
+				3F0F81BA1768146E006F5FB9 /* Images.xcassets */,
+				3F0F81A11768146E006F5FB9 /* Supporting Files */,
+			);
+			path = TMXMapSample;
+			sourceTree = "<group>";
+		};
+		3F0F81A11768146E006F5FB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F78704D17AD849200A11438 /* TODO.txt */,
+				3FDB94A317871E2300230D5C /* LICENSE.txt */,
+				3F0F81A21768146E006F5FB9 /* TMXMapSample-Info.plist */,
+				3F0F81A31768146E006F5FB9 /* InfoPlist.strings */,
+				3F0F81A61768146E006F5FB9 /* main.m */,
+				3F0F81A81768146E006F5FB9 /* TMXMapSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F0F81C71768146E006F5FB9 /* TMXMapSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F0F81CD1768146E006F5FB9 /* TMXMapSampleTests.m */,
+				3F0F81C81768146E006F5FB9 /* Supporting Files */,
+			);
+			path = TMXMapSampleTests;
+			sourceTree = "<group>";
+		};
+		3F0F81C81768146E006F5FB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F0F81C91768146E006F5FB9 /* TMXMapSampleTests-Info.plist */,
+				3F0F81CA1768146E006F5FB9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F0F81D717681C86006F5FB9 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				3F0F81DA17681C93006F5FB9 /* LFCGzipUtility.h */,
+				3F0F81DB17681C93006F5FB9 /* LFCGzipUtility.m */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		3F0F81DE17681CE9006F5FB9 /* JSTileMap */ = {
+			isa = PBXGroup;
+			children = (
+				3F0F81DF17681D0E006F5FB9 /* JSTileMap.h */,
+				3F0F81E017681D0E006F5FB9 /* JSTileMap.m */,
+			);
+			name = JSTileMap;
+			sourceTree = "<group>";
+		};
+		3F7CD7EF176AB075008EF0BC /* sample maps */ = {
+			isa = PBXGroup;
+			children = (
+				3FB13A3317BC668A007D9DB9 /* black-spade-md.png */,
+				3FDB949C178710B800230D5C /* Isometric */,
+				3F8BCB801770142900E3A62C /* tile edges */,
+				3F8BCB791770140C00E3A62C /* caves */,
+				3F8BCB78177013F700E3A62C /* debug */,
+				3F8BCB77177013E100E3A62C /* cobble */,
+			);
+			name = "sample maps";
+			sourceTree = "<group>";
+		};
+		3F8BCB77177013E100E3A62C /* cobble */ = {
+			isa = PBXGroup;
+			children = (
+				3F0F81E217681E36006F5FB9 /* sample.tmx */,
+				3F0F81E117681E36006F5FB9 /* cobbleset-64_0.png */,
+			);
+			name = cobble;
+			sourceTree = "<group>";
+		};
+		3F8BCB78177013F700E3A62C /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				95F55C4F17716A0500828C7A /* multi-tileset.tmx */,
+				3F7CD7F0176AB08A008EF0BC /* sample2.tmx */,
+				3F7CD7F1176AB08A008EF0BC /* sample3.tmx */,
+				3F7CD7F2176AB08A008EF0BC /* basic texture test.png */,
+			);
+			name = debug;
+			sourceTree = "<group>";
+		};
+		3F8BCB791770140C00E3A62C /* caves */ = {
+			isa = PBXGroup;
+			children = (
+				3F7870AA17B7198700A11438 /* Base64-uncompressed.tmx */,
+				3F8BCB8F177025AA00E3A62C /* a_sampleLayers.tmx */,
+				3F8BCB7B1770141A00E3A62C /* sampleCave.tmx */,
+				3F8BCB91177025CC00E3A62C /* XMLSampleLayers.tmx */,
+				3FDB94A4178FA4AE00230D5C /* scary_morguefile.jpg */,
+				3F8BCB7C1770141A00E3A62C /* caveAtlas.png */,
+			);
+			name = caves;
+			sourceTree = "<group>";
+		};
+		3F8BCB801770142900E3A62C /* tile edges */ = {
+			isa = PBXGroup;
+			children = (
+				3F8BCB811770143800E3A62C /* sampleMarsh.tmx */,
+				3F8BCB821770143800E3A62C /* sampleNoisyLakes.tmx */,
+				3F8BCB831770143800E3A62C /* tileEdges.png */,
+				3F8BCB841770143800E3A62C /* tiles.png */,
+				3F8BCB851770143800E3A62C /* tileEdges2.png */,
+				3F8BCB861770143800E3A62C /* tiles2.png */,
+				3F8BCB871770143800E3A62C /* sampleIslands.tmx */,
+			);
+			name = "tile edges";
+			sourceTree = "<group>";
+		};
+		3FDB949C178710B800230D5C /* Isometric */ = {
+			isa = PBXGroup;
+			children = (
+				3FDB94A11787133A00230D5C /* iso-test-2.tmx */,
+				3FDB949D178710C700230D5C /* iso-test-1.tmx */,
+				3FDB949E178710C700230D5C /* iso-64x64-outside.png */,
+			);
+			name = Isometric;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F0F81941768146E006F5FB9 /* TMXMapSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F0F81D11768146E006F5FB9 /* Build configuration list for PBXNativeTarget "TMXMapSample" */;
+			buildPhases = (
+				3F0F81911768146E006F5FB9 /* Sources */,
+				3F0F81921768146E006F5FB9 /* Frameworks */,
+				3F0F81931768146E006F5FB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TMXMapSample;
+			productName = TMXMapSample;
+			productReference = 3F0F81951768146E006F5FB9 /* TMXMapSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F0F81BF1768146E006F5FB9 /* TMXMapSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F0F81D41768146E006F5FB9 /* Build configuration list for PBXNativeTarget "TMXMapSampleTests" */;
+			buildPhases = (
+				3F0F81BC1768146E006F5FB9 /* Sources */,
+				3F0F81BD1768146E006F5FB9 /* Frameworks */,
+				3F0F81BE1768146E006F5FB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F0F81C61768146E006F5FB9 /* PBXTargetDependency */,
+			);
+			name = TMXMapSampleTests;
+			productName = TMXMapSampleTests;
+			productReference = 3F0F81C01768146E006F5FB9 /* TMXMapSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F0F818D1768146E006F5FB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Jeremy;
+				TargetAttributes = {
+					3F0F81BF1768146E006F5FB9 = {
+						TestTargetID = 3F0F81941768146E006F5FB9;
+					};
+				};
+			};
+			buildConfigurationList = 3F0F81901768146E006F5FB9 /* Build configuration list for PBXProject "TMXMapSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F0F818C1768146E006F5FB9;
+			productRefGroup = 3F0F81961768146E006F5FB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F0F81941768146E006F5FB9 /* TMXMapSample */,
+				3F0F81BF1768146E006F5FB9 /* TMXMapSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F0F81931768146E006F5FB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8BCB7F1770141A00E3A62C /* caveAtlas.png in Resources */,
+				3F8BCB881770143800E3A62C /* sampleMarsh.tmx in Resources */,
+				3F7870AB17B71AB300A11438 /* Base64-uncompressed.tmx in Resources */,
+				3F7CD7F5176AB08A008EF0BC /* basic texture test.png in Resources */,
+				3F0F81E317681E36006F5FB9 /* cobbleset-64_0.png in Resources */,
+				95F55C5017716A0500828C7A /* multi-tileset.tmx in Resources */,
+				3F0F81E417681E36006F5FB9 /* sample.tmx in Resources */,
+				3F8BCB90177025AA00E3A62C /* a_sampleLayers.tmx in Resources */,
+				3F8BCB8E1770143800E3A62C /* sampleIslands.tmx in Resources */,
+				3FDB94A0178710C700230D5C /* iso-64x64-outside.png in Resources */,
+				3F0F81BB1768146E006F5FB9 /* Images.xcassets in Resources */,
+				3F8BCB8C1770143800E3A62C /* tileEdges2.png in Resources */,
+				3FDB94A5178FA4AE00230D5C /* scary_morguefile.jpg in Resources */,
+				3F8BCB92177025CC00E3A62C /* XMLSampleLayers.tmx in Resources */,
+				3F8BCB7E1770141A00E3A62C /* sampleCave.tmx in Resources */,
+				3F8BCB8D1770143800E3A62C /* tiles2.png in Resources */,
+				3F0F81B11768146E006F5FB9 /* Main_iPad.storyboard in Resources */,
+				3F0F81AE1768146E006F5FB9 /* Main_iPhone.storyboard in Resources */,
+				3F0F81A51768146E006F5FB9 /* InfoPlist.strings in Resources */,
+				3F7CD7F3176AB08A008EF0BC /* sample2.tmx in Resources */,
+				3F7CD7F4176AB08A008EF0BC /* sample3.tmx in Resources */,
+				3F8BCB8B1770143800E3A62C /* tiles.png in Resources */,
+				3FDB94A21787139700230D5C /* iso-test-2.tmx in Resources */,
+				3FB13A3417BC668A007D9DB9 /* black-spade-md.png in Resources */,
+				3F8BCB8A1770143800E3A62C /* tileEdges.png in Resources */,
+				3F8BCB891770143800E3A62C /* sampleNoisyLakes.tmx in Resources */,
+				3FDB949F178710C700230D5C /* iso-test-1.tmx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0F81BE1768146E006F5FB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0F81CC1768146E006F5FB9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F0F81911768146E006F5FB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0F81B71768146E006F5FB9 /* MyScene.m in Sources */,
+				3F0F81B41768146E006F5FB9 /* ViewController.m in Sources */,
+				3F0F81E717681F40006F5FB9 /* JSTileMap.m in Sources */,
+				3F0F81AB1768146E006F5FB9 /* AppDelegate.m in Sources */,
+				3F0F81DD17681C93006F5FB9 /* LFCGzipUtility.m in Sources */,
+				3F0F81A71768146E006F5FB9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0F81BC1768146E006F5FB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0F81CE1768146E006F5FB9 /* TMXMapSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F0F81C61768146E006F5FB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F0F81941768146E006F5FB9 /* TMXMapSample */;
+			targetProxy = 3F0F81C51768146E006F5FB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F0F81A31768146E006F5FB9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F0F81A41768146E006F5FB9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3F0F81AC1768146E006F5FB9 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F0F81AD1768146E006F5FB9 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		3F0F81AF1768146E006F5FB9 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F0F81B01768146E006F5FB9 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		3F0F81CA1768146E006F5FB9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F0F81CB1768146E006F5FB9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F0F81CF1768146E006F5FB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F0F81D01768146E006F5FB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F0F81D21768146E006F5FB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TMXMapSample/TMXMapSample-Prefix.pch";
+				INFOPLIST_FILE = "TMXMapSample/TMXMapSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3F0F81D31768146E006F5FB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TMXMapSample/TMXMapSample-Prefix.pch";
+				INFOPLIST_FILE = "TMXMapSample/TMXMapSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3F0F81D51768146E006F5FB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TMXMapSample.app/TMXMapSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TMXMapSample/TMXMapSample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TMXMapSampleTests/TMXMapSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3F0F81D61768146E006F5FB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TMXMapSample.app/TMXMapSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TMXMapSample/TMXMapSample-Prefix.pch";
+				INFOPLIST_FILE = "TMXMapSampleTests/TMXMapSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F0F81901768146E006F5FB9 /* Build configuration list for PBXProject "TMXMapSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0F81CF1768146E006F5FB9 /* Debug */,
+				3F0F81D01768146E006F5FB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F0F81D11768146E006F5FB9 /* Build configuration list for PBXNativeTarget "TMXMapSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0F81D21768146E006F5FB9 /* Debug */,
+				3F0F81D31768146E006F5FB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F0F81D41768146E006F5FB9 /* Build configuration list for PBXNativeTarget "TMXMapSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0F81D51768146E006F5FB9 /* Debug */,
+				3F0F81D61768146E006F5FB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F0F818D1768146E006F5FB9 /* Project object */;
+}

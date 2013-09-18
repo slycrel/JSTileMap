@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="isometric" width="8" height="8" tilewidth="64" tileheight="32">
+ <tileset firstgid="1" name="iso" tilewidth="64" tileheight="64">
+  <image source="iso-64x64-outside.png" width="640" height="1024"/>
+ </tileset>
+ <layer name="Hills" width="8" height="8">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA1NmYGBQhmJFIGaEYj4oDZPTBmJ5IGZCUsOIJoesD4YV0ORYoGwmJBokxorFbHS3IPPR1TKh0cRiAFVSl8MAAQAA
+  </data>
+ </layer>
+ <layer name="Rocks" width="8" height="8">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgIB24kqEHHbgTkDcHYlMs4s5Q2gSKiTUPFwAAJfxxJwABAAA=
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="isometric" width="16" height="16" tilewidth="64" tileheight="32">
+ <tileset firstgid="1" name="yar" tilewidth="64" tileheight="64">
+  <image source="iso-64x64-outside.png" width="640" height="1024"/>
+ </tileset>
+ <layer name="grass" width="16" height="16">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA1NmYGBQHsWjeBSPSAwA8S5YZQAEAAA=
+  </data>
+ </layer>
+ <layer name="ornaments" width="16" height="16">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NggIAeBvJBNwV6u9D40ygwayoRaupwiE9B4y9A408gwR3zSVCLDubhEJ8MpWeRYFYjENcD8SQi1FbjEJ+Ixp9Lgv0w0Ayl5xChthWH+Gwy7EUHvVQwgxpg+kA7AAkAAOZOvq4ABAAA
+  </data>
+ </layer>
+ <objectgroup name="Object Layer test" width="16" height="16">
+  <object name="five" gid="111" x="224" y="224"/>
+  <object name="two" gid="111" x="32" y="32"/>
+  <object name="four" gid="111" x="512" y="32"/>
+  <object name="three" gid="111" x="512" y="512"/>
+  <object name="one" gid="111" x="32" y="512"/>
+ </objectgroup>
+</map>

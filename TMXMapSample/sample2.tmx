@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="16" height="16" tilewidth="64" tileheight="64">
+ <tileset firstgid="1" name="basic" tilewidth="64" tileheight="64">
+  <image source="basic texture test.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="16" height="16">
+  <data encoding="base64" compression="zlib">
+   eJwl0lWSXDEQRFENmpmZmdljXloupZaSS/Pp6I8bA6pXStDOWmsXe9jHAQ5xDMdxtNZ8wAs8wA1cwAnsbH+ukziF0ziDsziH8/hh5iNe4iFu4iJ8M7vbXcvf6xIu4wqu4hqu46eZT3iFR7gFs+O+2dvqWXYu/1+3cQd3cQ/38cvMZ7zGY5gZ9wyts7/1tOhadi/n6wme4hme47eZL3gDZ2P/0Dh8zsE2l8Xbom+5Y5lbb/EO7/HHzFf439g7tA1/I6M53Ga75LN4XHQudy3z6xu+468Zv499Q9PwNbIZ+Y6O5mib8SanjdeN3s2dm+/Wvy1jz9Ay/IxMRq6jm9HvOK/Z+qa+rR21q3bW7pqJe0Jr+I3MIvfoLvqP3aWvNJf28lBeylN5q3tCa/iNzCL36C76j7cTuspb5VPZVYaVZWVa2ZbW8BuZRe7RXfQfbybeTniqXCrb6qc6rC6r0+q2/EZmkXt0F/3HW4k3E28nzuu8zuu8zuu8zuu89sf+2B/7Y3/sj/2xP/SVvtJX+kpf6St9pa/8hb/wF/7CX/gLf+Ev8ql8Kp/Kp/KpfCqfyqfyjXwj38g38o18I9/IN/qpfqqf6qf6qX6qn+qn+o1+o9/oN/qNfqPf6Df/AZd8mIE=
+  </data>
+ </layer>
+</map>
