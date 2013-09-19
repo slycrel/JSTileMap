@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>7AFE0903-710A-464C-BE4A-04C6A84B84C8</string>
+	<string>9FBBBDC5-3CF4-4FB2-8AF7-7BB59D435F29</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TMXMapSample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5997DEDC-BA12-408C-9E09-5963A8609BFD</key>
-		<string>https://bitbucket.org/slycrel/jstilemap.git</string>
+		<key>136B3A6D-DE5C-4DDF-B841-F8E3E17753E1</key>
+		<string>https://github.com/slycrel/JSTileMap.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TMXMapSample.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5997DEDC-BA12-408C-9E09-5963A8609BFD</key>
+		<key>136B3A6D-DE5C-4DDF-B841-F8E3E17753E1</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://bitbucket.org/slycrel/jstilemap.git</string>
+	<string>https://github.com/slycrel/JSTileMap.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5997DEDC-BA12-408C-9E09-5963A8609BFD</string>
+	<string>136B3A6D-DE5C-4DDF-B841-F8E3E17753E1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5997DEDC-BA12-408C-9E09-5963A8609BFD</string>
+			<string>136B3A6D-DE5C-4DDF-B841-F8E3E17753E1</string>
 			<key>IDESourceControlWCCName</key>
-			<string>JSTilemap</string>
+			<string>JSTileMap</string>
 		</dict>
 	</array>
 </dict>

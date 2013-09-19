@@ -1,26 +1,18 @@
-
 Loose todo list
 
 - optimization!
-	- tile objects beign drawn more efficiently?
-	- blending mode on back-most layer?
+	- tile objects being drawn more efficiently?
+	- blending mode on back-most layer could be optimized?
 
 - better accessors.
 	- wrapper for getting GID for a layer based on coords rather than the layer info.
 	- possible tile at coord given z depth?
 
-- clean up naming?  Do we like JSTileMap and then TMX...obj naming convention?
-
 - is our default position in the right place?  Is it centered or bottom-left?
 
-- use new base64 functionality built into cocoa in iOS7
 - can we use better zip support rather than using a 3rd party lib for this?
 
 - ISO object positions and tile object positions are incorrect.
 
--ZOrdering isn't working properly?  Did apple flip this from furthest to nearest?
-
-later:
-
-- add code to make this work in macOS, should be pretty easy to do.
+- add code to make this work in macOS
 

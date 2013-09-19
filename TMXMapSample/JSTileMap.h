@@ -141,15 +141,7 @@ typedef enum
 
 @end
 
-/*
-	**NOTE:	Apple's math is based on having tiles with 1 pixel extruded images.  So you will want a margin of
-			AT LEAST 1 pixel as well as at least 2 spacing between tiles to account for copied pixels above 
-			your tile sizes.  So if my tiles are 64x64, they would actually be 66x66, with the outside border
-			pixels being the same as the first actual pixels in the tile.  This gets rid of tile edges.  This
-			was gleaned from the 2013 WWDC session 503, "Designing games with SpriteKit".  (about 13 minutes
-			into it)
- 
- */
+
 @interface JSTileMap : SKNode <NSXMLParserDelegate>
 
 @property (assign, nonatomic) CGSize mapSize;
