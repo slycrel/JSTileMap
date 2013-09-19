@@ -1,9 +1,11 @@
 JSTileMap is a TMX Map viewer for SpriteKit
 =========
 
-Include 
+Include
+
 	JSTileMap.m
 	JSTileMap.h
+
 In your project.
 
 Loading a map
@@ -15,6 +17,8 @@ Loading a map
 
 Browse the properties in JSTileMap and TMXLayer for most of what you'll use 
 frequently.  Limited accessor methods are included for convenience.
+
+Tile atlases are expected to be in the same directory as the TMX file when loaded.
 
 The repository also contains an example project that will give you a 
 general idea of how layers, tilesets, and objects work.
