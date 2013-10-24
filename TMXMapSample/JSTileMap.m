@@ -95,7 +95,7 @@
 }
 
 
-#warning need to write setTileGidAt:
+//#warning need to write setTileGidAt:
 
 
 -(void)removeTileAtCoord:(CGPoint)coord
@@ -670,7 +670,7 @@
 					
 					if (map.orientation == OrientationStyle_Isometric)
 					{
-#warning these appear to be incorrect for iso maps when used for tile objects!  Unsure why the math is different between objects and regular tiles.
+//#warning these appear to be incorrect for iso maps when used for tile objects!  Unsure why the math is different between objects and regular tiles.
 						CGPoint coords = [map screenCoordToPosition:CGPointMake(x, y)];
 						pt = CGPointMake((map.tileSize.width / 2.0) * (map.tileSize.width + coords.x - coords.y - 1),
 										 (map.tileSize.height / 2.0) * (((map.tileSize.height * 2) - coords.x - coords.y) - 2));
@@ -709,7 +709,7 @@
 		NSLog(@"IMAGE Layer %@ has zPosition %f", imageLayer.name, image.zPosition);
 #endif
 		
-#warning the positioning is off here, seems to be bottom-left instead of top-left.  Might be off on the rest of the sprites too...?
+//#warning the positioning is off here, seems to be bottom-left instead of top-left.  Might be off on the rest of the sprites too...?
 	}
 	
 	return map;

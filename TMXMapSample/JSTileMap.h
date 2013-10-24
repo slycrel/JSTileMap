@@ -80,7 +80,7 @@ typedef enum
 @interface TMXLayerInfo : NSObject <NSCoding>
 @property (strong, nonatomic) NSString *name;
 @property (assign, nonatomic) CGSize layerGridSize;
-@property (assign, nonatomic) NSInteger* tiles;
+@property (assign, nonatomic) int* tiles;
 @property (assign, nonatomic) BOOL visible;
 @property (assign, nonatomic) CGFloat opacity;
 @property (assign, nonatomic) NSUInteger minGID;
