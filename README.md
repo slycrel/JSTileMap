@@ -32,6 +32,10 @@ The repository also contains an example project, containing the above files, tha
 will give you a general idea of how layers, tilesets, and objects work, and a 
 few examples of what does (and does not) currently work.
 
-Note that Isometric maps are currently considered to be in beta as 
+** NOTE:  The TMX map format is in pixels, not points like apple's format.  As 
+such, you should -NOT- use the @2x format for your sprite atlas images or the 
+map won't load properly.
+
+Also note that Isometric maps are currently considered to be in beta as 
 there are bugs with tile object positioning in isometric maps.  If you do not 
-use tile objects you should be able to use basic isometric maps.
+use tile objects you should be able to use isometric maps.
