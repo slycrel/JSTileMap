@@ -51,23 +51,23 @@ typedef enum
 @interface TMXTilesetInfo : NSObject <NSCoding>
 
 @property (readonly, nonatomic) NSString* name;
-@property (readonly, nonatomic) NSUInteger firstGid;
+@property (readonly, nonatomic) unsigned int firstGid;
 @property (readonly, nonatomic) CGSize tileSize;
 @property (readonly, nonatomic) CGSize unitTileSize;
-@property (readonly, nonatomic) NSUInteger spacing;
-@property (readonly, nonatomic) NSUInteger margin;
+@property (readonly, nonatomic) unsigned int spacing;
+@property (readonly, nonatomic) unsigned int margin;
 @property (readonly, nonatomic) NSString* sourceImage;
 @property (readonly, nonatomic) CGSize imageSize;
-@property (readonly, nonatomic) NSInteger atlasTilesPerRow;
-@property (readonly, nonatomic) NSInteger atlasTilesPerCol;
+@property (readonly, nonatomic) int atlasTilesPerRow;
+@property (readonly, nonatomic) int atlasTilesPerCol;
 @property (readonly, nonatomic) SKTexture* atlasTexture;
 
--(instancetype)initWithGid:(NSInteger)gid attributes:(NSDictionary*)attributes;
+-(instancetype)initWithGid:(int)gid attributes:(NSDictionary*)attributes;
 -(void)setSourceImage:(NSString *)sourceImage;
 
--(NSInteger)rowFromGid:(NSInteger)gid;
--(NSInteger)colFromGid:(NSInteger)gid;
--(SKTexture*)textureForGid:(NSInteger)gid;
+-(int)rowFromGid:(int)gid;
+-(int)colFromGid:(int)gid;
+-(SKTexture*)textureForGid:(int)gid;
 
 /** Given the location of the upper left corner of a tile in this tileset, 
     returns a new SKTexture for that tile. */
@@ -83,13 +83,13 @@ typedef enum
 @property (assign, nonatomic) int* tiles;
 @property (assign, nonatomic) BOOL visible;
 @property (assign, nonatomic) CGFloat opacity;
-@property (assign, nonatomic) NSUInteger minGID;
-@property (assign, nonatomic) NSUInteger maxGID;
+@property (assign, nonatomic) unsigned int minGID;
+@property (assign, nonatomic) unsigned int maxGID;
 @property (strong, nonatomic) NSMutableDictionary *properties;
 @property (assign, nonatomic) CGPoint offset;
 @property (assign, nonatomic) TMXLayer* layer;
 
--(NSInteger)tileGidAtCoord:(CGPoint)coord;
+-(int)tileGidAtCoord:(CGPoint)coord;
 
 @end
 
@@ -135,7 +135,7 @@ typedef enum
 - (void)removeTileAtCoord:(CGPoint)coord;
 - (SKSpriteNode*)tileAt:(CGPoint)point;
 - (SKSpriteNode*)tileAtCoord:(CGPoint)coord;
-- (NSInteger)tileGidAt:(CGPoint)point;
+- (int)tileGidAt:(CGPoint)point;
 - (id) propertyWithName:(NSString*)name;
 - (NSDictionary*)properties;
 
@@ -147,8 +147,8 @@ typedef enum
 @property (assign, nonatomic) CGSize mapSize;
 @property (assign, nonatomic) CGSize tileSize;
 @property (assign, nonatomic) PropertyType parentElement;
-@property (assign, nonatomic) NSInteger parentGID;
-@property (assign, nonatomic) NSUInteger orientation;
+@property (assign, nonatomic) int parentGID;
+@property (assign, nonatomic) unsigned int orientation;
 
 // minimum and maximum range of zPositioning of the map.
 @property (readonly) CGFloat minZPositioning;
@@ -187,7 +187,7 @@ typedef enum
 -(TMXLayer*)layerNamed:(NSString*)name;
 -(TMXObjectGroup*)groupNamed:(NSString*)name;
 
--(TMXTilesetInfo*)tilesetInfoForGid:(NSInteger)gID;
--(NSDictionary*)propertiesForGid:(NSInteger)gID;
+-(TMXTilesetInfo*)tilesetInfoForGid:(int)gID;
+-(NSDictionary*)propertiesForGid:(int)gID;
 
 @end

@@ -10,16 +10,16 @@
 
 @interface ViewController ()
 
-@property (weak, nonatomic) MyScene* scene;
+@property (strong, nonatomic) MyScene* scene;
 
 @end
 
 
 @implementation ViewController
 
-- (void)viewDidLoad
+- (void)viewWillLayoutSubviews
 {
-    [super viewDidLoad];
+    [super viewWillLayoutSubviews];
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;

@@ -47,7 +47,7 @@
 	zlibStreamStruct.opaque    = Z_NULL; // updated to use default allocation functions.
 	zlibStreamStruct.total_out = 0; // Total number of output bytes produced so far
 	zlibStreamStruct.next_in   = (Bytef*)[pUncompressedData bytes]; // Pointer to input bytes
-	zlibStreamStruct.avail_in  = [pUncompressedData length]; // Number of input bytes left to process
+	zlibStreamStruct.avail_in  = (unsigned int)[pUncompressedData length]; // Number of input bytes left to process
 	
 	/* Initialize the zlib deflation (i.e. compression) internals with deflateInit2().
 	 The parameters are as follows:
@@ -109,7 +109,7 @@
 		// Calculate the amount of remaining free space in the output buffer
 		// by subtracting the number of bytes that have been written so far
 		// from the buffer's total capacity
-		zlibStreamStruct.avail_out = [compressedData length] - zlibStreamStruct.total_out;
+		zlibStreamStruct.avail_out = (unsigned int)([compressedData length] - zlibStreamStruct.total_out);
 		
 		/* deflate() compresses as much data as possible, and stops/returns when
 		 the input buffer becomes empty or the output buffer becomes full. If
