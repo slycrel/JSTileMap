@@ -14,5 +14,5 @@ Loose todo list
 
 - ISO object positions and tile object positions are incorrect.
 
-- add code to make this work in macOS
+- preliminary macOS support added.  Still has points / pixels issues.
 

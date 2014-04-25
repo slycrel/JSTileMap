@@ -36,6 +36,9 @@ few examples of what does (and does not) currently work.
 such, you should -NOT- use the @2x format for your sprite atlas images or the 
 map won't load properly.
 
-Also note that Isometric maps are currently considered to be in beta as 
+** NOTE 2:  Isometric maps are currently considered to be in beta as 
 there are bugs with tile object positioning in isometric maps.  If you do not 
 use tile objects you should be able to use isometric maps.
+
+Mac support works but there are points / pixels issues with the atlas images.  Should
+be considered beta.
