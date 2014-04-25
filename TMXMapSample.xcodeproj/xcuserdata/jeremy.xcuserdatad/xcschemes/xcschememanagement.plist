@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TMXMapSampleMac.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>3F0F81BF1768146E006F5FB9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3F95629818F3C87000E9DA8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3F9562BC18F3C87000E9DA8C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

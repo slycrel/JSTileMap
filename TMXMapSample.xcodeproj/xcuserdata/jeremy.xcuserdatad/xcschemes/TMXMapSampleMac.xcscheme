@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3F0F81941768146E006F5FB9"
-               BuildableName = "TMXMapSample.app"
-               BlueprintName = "TMXMapSample"
+               BlueprintIdentifier = "3F95629818F3C87000E9DA8C"
+               BuildableName = "TMXMapSampleMac.app"
+               BlueprintName = "TMXMapSampleMac"
                ReferencedContainer = "container:TMXMapSample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,33 +28,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3F0F81BF1768146E006F5FB9"
-               BuildableName = "TMXMapSampleTests.xctest"
-               BlueprintName = "TMXMapSampleTests"
-               ReferencedContainer = "container:TMXMapSample.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3F9562BC18F3C87000E9DA8C"
-               BuildableName = "TMXMapSampleMacTests.xctest"
-               BlueprintName = "TMXMapSampleMacTests"
-               ReferencedContainer = "container:TMXMapSample.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3F0F81941768146E006F5FB9"
-            BuildableName = "TMXMapSample.app"
-            BlueprintName = "TMXMapSample"
+            BlueprintIdentifier = "3F95629818F3C87000E9DA8C"
+            BuildableName = "TMXMapSampleMac.app"
+            BlueprintName = "TMXMapSampleMac"
             ReferencedContainer = "container:TMXMapSample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -71,9 +51,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3F0F81941768146E006F5FB9"
-            BuildableName = "TMXMapSample.app"
-            BlueprintName = "TMXMapSample"
+            BlueprintIdentifier = "3F95629818F3C87000E9DA8C"
+            BuildableName = "TMXMapSampleMac.app"
+            BlueprintName = "TMXMapSampleMac"
             ReferencedContainer = "container:TMXMapSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -89,9 +69,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3F0F81941768146E006F5FB9"
-            BuildableName = "TMXMapSample.app"
-            BlueprintName = "TMXMapSample"
+            BlueprintIdentifier = "3F95629818F3C87000E9DA8C"
+            BuildableName = "TMXMapSampleMac.app"
+            BlueprintName = "TMXMapSampleMac"
             ReferencedContainer = "container:TMXMapSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
