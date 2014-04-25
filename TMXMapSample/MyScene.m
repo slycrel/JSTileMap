@@ -35,7 +35,7 @@
 		label.fontSize = 18;
 
 #if TARGET_OSX
-		label.text = @"Double-click to change maps.";
+		label.text = @"click to change maps.";
 		label.fontColor = [NSColor yellowColor];
 #else
 		label.text = @"Double-tap to change maps.";
@@ -60,6 +60,18 @@
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
 }
+
+
+#ifdef TARGET_OSX
+
+-(void)mouseDown:(NSEvent *)theEvent {
+	/* Called when a mouse click occurs */
+    
+	[self swapToNextMap];
+}
+
+#endif
+
 
 
 - (void) loadTileMap:(NSString*)tileMap
@@ -91,14 +103,14 @@
 			self.mapNameLabel.text = tileMap;
 		self.mapNameLabel.position = CGPointMake(0, -self.size.height/2.0 + 30);
 		
-//		// test spade for zOrdering.  Some test maps will make this more useful (as a test) than others.
-//		SKSpriteNode* spade = [SKSpriteNode spriteNodeWithImageNamed:@"black-spade-md.png"];
-//		spade.position = CGPointMake(spade.frame.size.width/2.5, spade.frame.size.height/2.5);
-//		spade.zPosition = self.tiledMap.minZPositioning / 2.0;
-//#ifdef DEBUG
-//		NSLog(@"SPADE has zPosition %f", spade.zPosition);
-//#endif
-//		[self.tiledMap addChild:spade];
+		// test spade for zOrdering.  Some test maps will make this more useful (as a test) than others.
+		SKSpriteNode* spade = [SKSpriteNode spriteNodeWithImageNamed:@"black-spade-md.png"];
+		spade.position = CGPointMake(spade.frame.size.width/2.5, spade.frame.size.height/2.5);
+		spade.zPosition = self.tiledMap.minZPositioning / 2.0;
+#ifdef DEBUG
+		NSLog(@"SPADE has zPosition %f", spade.zPosition);
+#endif
+		[self.tiledMap addChild:spade];
 	}
 	else
 	{
