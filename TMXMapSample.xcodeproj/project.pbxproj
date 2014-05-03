@@ -541,7 +541,7 @@
 		3F0F818D1768146E006F5FB9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Jeremy;
 				TargetAttributes = {
 					3F0F81BF1768146E006F5FB9 = {
@@ -937,7 +937,7 @@
 				INFOPLIST_FILE = "TMXMapSampleMac/TMXMapSampleMac-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.9;
+				SDKROOT = macosx;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -961,7 +961,7 @@
 				INFOPLIST_FILE = "TMXMapSampleMac/TMXMapSampleMac-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.9;
+				SDKROOT = macosx;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1055,6 +1055,7 @@
 				3F9562CB18F3C87100E9DA8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F9562CF18F3C87100E9DA8C /* Build configuration list for PBXNativeTarget "TMXMapSampleMacTests" */ = {
 			isa = XCConfigurationList;
@@ -1063,6 +1064,7 @@
 				3F9562CD18F3C87100E9DA8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

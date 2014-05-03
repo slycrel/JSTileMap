@@ -62,7 +62,7 @@
 }
 
 
-#ifdef TARGET_OSX
+#if TARGET_OSX
 
 -(void)mouseDown:(NSEvent *)theEvent {
 	/* Called when a mouse click occurs */
