@@ -190,7 +190,7 @@
 				else
 				{
 					sprite.position = CGPointMake(col * layer.mapTileSize.width + layer.mapTileSize.width/2.0,
-												  (mapInfo.mapSize.height * (tilesetInfo.tileSize.height)) - ((row + 1) * layer.mapTileSize.height) + layer.mapTileSize.height/2.0);
+																				(mapInfo.mapSize.height * (layer.mapTileSize.height)) - ((row + 1) * layer.mapTileSize.height) + layer.mapTileSize.height/2.0);
 				}
 				
 				// flip sprites if necessary
@@ -747,6 +747,7 @@
 					SKSpriteNode* sprite = [SKSpriteNode spriteNodeWithTexture:texture];
 					sprite.position = pt;
 					sprite.zPosition = baseZPosition + ((map.zOrderCount - objectGroup.zOrderCount) * zOrderModifier);
+					sprite.name = obj[@"name"];
 					[map addChild:sprite];
 					
 //#warning This needs to be optimized into tilemap layers like our regular layers above for performance reasons.
