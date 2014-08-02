@@ -189,8 +189,8 @@
 				}
 				else
 				{
-					sprite.position = CGPointMake(col * layer.mapTileSize.width + layer.mapTileSize.width/2.0,
-																				(mapInfo.mapSize.height * (layer.mapTileSize.height)) - ((row + 1) * layer.mapTileSize.height) + layer.mapTileSize.height/2.0);
+					sprite.position = CGPointMake(col * layer.mapTileSize.width + tilesetInfo.tileSize.width/2.0,
+																				(mapInfo.mapSize.height * (layer.mapTileSize.height)) - ((row + 1) * layer.mapTileSize.height) + tilesetInfo.tileSize.height/2.0);
 				}
 				
 				// flip sprites if necessary
