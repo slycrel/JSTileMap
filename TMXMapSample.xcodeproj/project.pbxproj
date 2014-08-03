@@ -29,6 +29,20 @@
 		3F0F81E417681E36006F5FB9 /* sample.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3F0F81E217681E36006F5FB9 /* sample.tmx */; };
 		3F0F81E617681F28006F5FB9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0F81E517681F28006F5FB9 /* libz.dylib */; };
 		3F0F81E717681F40006F5FB9 /* JSTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F81E017681D0E006F5FB9 /* JSTileMap.m */; };
+		3F26F380198D7988006959EE /* Issue8test.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3F26F379198D7987006959EE /* Issue8test.tmx */; };
+		3F26F381198D7988006959EE /* Issue8test.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3F26F379198D7987006959EE /* Issue8test.tmx */; };
+		3F26F382198D7988006959EE /* Peacesong_largeProps.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F26F37A198D7988006959EE /* Peacesong_largeProps.png */; };
+		3F26F383198D7988006959EE /* Peacesong_largeProps.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F26F37A198D7988006959EE /* Peacesong_largeProps.png */; };
+		3F26F384198D7988006959EE /* Peacesong_largeProps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F26F37B198D7988006959EE /* Peacesong_largeProps@2x.png */; };
+		3F26F385198D7988006959EE /* Peacesong_largeProps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F26F37B198D7988006959EE /* Peacesong_largeProps@2x.png */; };
+		3F26F386198D7988006959EE /* Peacesong_mediumProps.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F26F37C198D7988006959EE /* Peacesong_mediumProps.png */; };
+		3F26F387198D7988006959EE /* Peacesong_mediumProps.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F26F37C198D7988006959EE /* Peacesong_mediumProps.png */; };
+		3F26F388198D7988006959EE /* Peacesong_mediumProps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F26F37D198D7988006959EE /* Peacesong_mediumProps@2x.png */; };
+		3F26F389198D7988006959EE /* Peacesong_mediumProps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F26F37D198D7988006959EE /* Peacesong_mediumProps@2x.png */; };
+		3F26F38A198D7988006959EE /* Peacesong_smallProps.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F26F37E198D7988006959EE /* Peacesong_smallProps.png */; };
+		3F26F38B198D7988006959EE /* Peacesong_smallProps.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F26F37E198D7988006959EE /* Peacesong_smallProps.png */; };
+		3F26F38C198D7988006959EE /* Peacesong_smallProps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F26F37F198D7988006959EE /* Peacesong_smallProps@2x.png */; };
+		3F26F38D198D7988006959EE /* Peacesong_smallProps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F26F37F198D7988006959EE /* Peacesong_smallProps@2x.png */; };
 		3F7870AB17B71AB300A11438 /* Base64-uncompressed.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3F7870AA17B7198700A11438 /* Base64-uncompressed.tmx */; };
 		3F7CD7F3176AB08A008EF0BC /* sample2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3F7CD7F0176AB08A008EF0BC /* sample2.tmx */; };
 		3F7CD7F4176AB08A008EF0BC /* sample3.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3F7CD7F1176AB08A008EF0BC /* sample3.tmx */; };
@@ -140,6 +154,13 @@
 		3F0F81E117681E36006F5FB9 /* cobbleset-64_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cobbleset-64_0.png"; sourceTree = "<group>"; };
 		3F0F81E217681E36006F5FB9 /* sample.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample.tmx; sourceTree = "<group>"; };
 		3F0F81E517681F28006F5FB9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3F26F379198D7987006959EE /* Issue8test.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Issue8test.tmx; sourceTree = "<group>"; };
+		3F26F37A198D7988006959EE /* Peacesong_largeProps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Peacesong_largeProps.png; sourceTree = "<group>"; };
+		3F26F37B198D7988006959EE /* Peacesong_largeProps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Peacesong_largeProps@2x.png"; sourceTree = "<group>"; };
+		3F26F37C198D7988006959EE /* Peacesong_mediumProps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Peacesong_mediumProps.png; sourceTree = "<group>"; };
+		3F26F37D198D7988006959EE /* Peacesong_mediumProps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Peacesong_mediumProps@2x.png"; sourceTree = "<group>"; };
+		3F26F37E198D7988006959EE /* Peacesong_smallProps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Peacesong_smallProps.png; sourceTree = "<group>"; };
+		3F26F37F198D7988006959EE /* Peacesong_smallProps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Peacesong_smallProps@2x.png"; sourceTree = "<group>"; };
 		3F78704D17AD849200A11438 /* TODO.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
 		3F7870AA17B7198700A11438 /* Base64-uncompressed.tmx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Base64-uncompressed.tmx"; sourceTree = "<group>"; };
 		3F7CD7F0176AB08A008EF0BC /* sample2.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample2.tmx; sourceTree = "<group>"; };
@@ -340,9 +361,24 @@
 			name = JSTileMap;
 			sourceTree = "<group>";
 		};
+		3F26F378198D7987006959EE /* Issue8 */ = {
+			isa = PBXGroup;
+			children = (
+				3F26F379198D7987006959EE /* Issue8test.tmx */,
+				3F26F37A198D7988006959EE /* Peacesong_largeProps.png */,
+				3F26F37B198D7988006959EE /* Peacesong_largeProps@2x.png */,
+				3F26F37C198D7988006959EE /* Peacesong_mediumProps.png */,
+				3F26F37D198D7988006959EE /* Peacesong_mediumProps@2x.png */,
+				3F26F37E198D7988006959EE /* Peacesong_smallProps.png */,
+				3F26F37F198D7988006959EE /* Peacesong_smallProps@2x.png */,
+			);
+			path = Issue8;
+			sourceTree = "<group>";
+		};
 		3F7CD7EF176AB075008EF0BC /* sample maps */ = {
 			isa = PBXGroup;
 			children = (
+				3F26F378198D7987006959EE /* Issue8 */,
 				3FB13A3317BC668A007D9DB9 /* black-spade-md.png */,
 				3FDB949C178710B800230D5C /* Isometric */,
 				3F8BCB801770142900E3A62C /* tile edges */,
@@ -578,6 +614,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F26F38A198D7988006959EE /* Peacesong_smallProps.png in Resources */,
 				3F8BCB7F1770141A00E3A62C /* caveAtlas.png in Resources */,
 				3F8BCB881770143800E3A62C /* sampleMarsh.tmx in Resources */,
 				3F7870AB17B71AB300A11438 /* Base64-uncompressed.tmx in Resources */,
@@ -587,6 +624,7 @@
 				3F0F81E417681E36006F5FB9 /* sample.tmx in Resources */,
 				3F8BCB90177025AA00E3A62C /* a_sampleLayers.tmx in Resources */,
 				3F8BCB8E1770143800E3A62C /* sampleIslands.tmx in Resources */,
+				3F26F380198D7988006959EE /* Issue8test.tmx in Resources */,
 				3FDB94A0178710C700230D5C /* iso-64x64-outside.png in Resources */,
 				3F0F81BB1768146E006F5FB9 /* Images.xcassets in Resources */,
 				3F8BCB8C1770143800E3A62C /* tileEdges2.png in Resources */,
@@ -594,15 +632,20 @@
 				3F8BCB92177025CC00E3A62C /* XMLSampleLayers.tmx in Resources */,
 				3F8BCB7E1770141A00E3A62C /* sampleCave.tmx in Resources */,
 				3F8BCB8D1770143800E3A62C /* tiles2.png in Resources */,
+				3F26F38C198D7988006959EE /* Peacesong_smallProps@2x.png in Resources */,
 				3F0F81B11768146E006F5FB9 /* Main_iPad.storyboard in Resources */,
 				3F0F81AE1768146E006F5FB9 /* Main_iPhone.storyboard in Resources */,
 				3F0F81A51768146E006F5FB9 /* InfoPlist.strings in Resources */,
 				3F7CD7F3176AB08A008EF0BC /* sample2.tmx in Resources */,
+				3F26F386198D7988006959EE /* Peacesong_mediumProps.png in Resources */,
 				3F9562EA18F3C9C900E9DA8C /* LICENSE.txt in Resources */,
+				3F26F382198D7988006959EE /* Peacesong_largeProps.png in Resources */,
 				3F7CD7F4176AB08A008EF0BC /* sample3.tmx in Resources */,
 				3F8BCB8B1770143800E3A62C /* tiles.png in Resources */,
+				3F26F384198D7988006959EE /* Peacesong_largeProps@2x.png in Resources */,
 				3FDB94A21787139700230D5C /* iso-test-2.tmx in Resources */,
 				3FB13A3417BC668A007D9DB9 /* black-spade-md.png in Resources */,
+				3F26F388198D7988006959EE /* Peacesong_mediumProps@2x.png in Resources */,
 				3F8BCB8A1770143800E3A62C /* tileEdges.png in Resources */,
 				3F8BCB891770143800E3A62C /* sampleNoisyLakes.tmx in Resources */,
 				3FDB949F178710C700230D5C /* iso-test-1.tmx in Resources */,
@@ -623,12 +666,16 @@
 			files = (
 				3F9562B818F3C87000E9DA8C /* Images.xcassets in Resources */,
 				3F9562D418F3C97D00E9DA8C /* black-spade-md.png in Resources */,
+				3F26F389198D7988006959EE /* Peacesong_mediumProps@2x.png in Resources */,
 				3F9562DF18F3C99900E9DA8C /* a_sampleLayers.tmx in Resources */,
 				3F9562E418F3C99E00E9DA8C /* multi-tileset.tmx in Resources */,
+				3F26F38B198D7988006959EE /* Peacesong_smallProps.png in Resources */,
 				3F9562D918F3C99200E9DA8C /* tileEdges.png in Resources */,
+				3F26F387198D7988006959EE /* Peacesong_mediumProps.png in Resources */,
 				3F9562D818F3C99200E9DA8C /* sampleNoisyLakes.tmx in Resources */,
 				3F9562DA18F3C99200E9DA8C /* tiles.png in Resources */,
 				3F9562D518F3C98500E9DA8C /* iso-test-1.tmx in Resources */,
+				3F26F381198D7988006959EE /* Issue8test.tmx in Resources */,
 				3F9562E118F3C99900E9DA8C /* XMLSampleLayers.tmx in Resources */,
 				3F9562D718F3C98D00E9DA8C /* sampleMarsh.tmx in Resources */,
 				3F9562E818F3C9A200E9DA8C /* sample.tmx in Resources */,
@@ -638,16 +685,19 @@
 				3F9562DB18F3C99200E9DA8C /* tileEdges2.png in Resources */,
 				3F9562E718F3C99E00E9DA8C /* basic texture test.png in Resources */,
 				3F9562DD18F3C99200E9DA8C /* sampleIslands.tmx in Resources */,
+				3F26F38D198D7988006959EE /* Peacesong_smallProps@2x.png in Resources */,
 				3F9562E318F3C99900E9DA8C /* caveAtlas.png in Resources */,
 				3F9562E518F3C99E00E9DA8C /* sample2.tmx in Resources */,
 				3F9562EB18F3C9CA00E9DA8C /* LICENSE.txt in Resources */,
 				3F9562E918F3C9A200E9DA8C /* cobbleset-64_0.png in Resources */,
+				3F26F383198D7988006959EE /* Peacesong_largeProps.png in Resources */,
 				3F9562AC18F3C87000E9DA8C /* Credits.rtf in Resources */,
 				3F9562D618F3C98900E9DA8C /* iso-64x64-outside.png in Resources */,
 				3F9562DC18F3C99200E9DA8C /* tiles2.png in Resources */,
 				3F9562E018F3C99900E9DA8C /* sampleCave.tmx in Resources */,
 				3F9562AE18F3C87000E9DA8C /* MainMenu.xib in Resources */,
 				3F9562E618F3C99E00E9DA8C /* sample3.tmx in Resources */,
+				3F26F385198D7988006959EE /* Peacesong_largeProps@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
