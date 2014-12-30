@@ -109,8 +109,7 @@
 		// remove tile from GID map
 		self.layerInfo.tiles[z] = 0;
 		
-		SKNode* tileNode = [self childNodeWithName:[NSString stringWithFormat:@"//%d",
-													(int)(coord.x + coord.y * self.layerInfo.layerGridSize.width)]];
+		SKNode* tileNode = [self tileAtCoord:coord];
 		if(tileNode)
 			[tileNode removeFromParent];
 	}
