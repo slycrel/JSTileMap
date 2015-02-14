@@ -1252,7 +1252,7 @@
 				int x = 0;
 				for (NSString* gid in self.gidData)
 				{
-					layer.tiles[x] = [gid intValue];
+					layer.tiles[x] = [gid longLongValue];
 					x++;
 				}
 			}
