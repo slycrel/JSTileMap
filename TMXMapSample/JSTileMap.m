@@ -158,11 +158,10 @@
 		for (int row = 0; row < layerInfo.layerGridSize.height; row++)
 		{
 			// get the gID
-			int gID = layerInfo.tiles[col + (int)(row * layerInfo.layerGridSize.width)];
+			UInt32 gID = layerInfo.tiles[col + (int)(row * layerInfo.layerGridSize.width)];
 			
 			// mask off the flip bits and remember their result.
-			bool flipX = (gID & kTileHorizontalFlag) != 0;
-			bool flipY = (gID & kTileVerticalFlag) != 0;
+            UInt32 flipXY = gID & (kTileHorizontalFlag | kTileVerticalFlag);
 			bool flipDiag = (gID & kTileDiagonalFlag) != 0;
 			gID = gID & kFlippedMask;
 			
@@ -193,21 +192,27 @@
 				}
 				
 				// flip sprites if necessary
-				if(flipDiag)
-				{
-					if(flipX)
-						sprite.zRotation = -M_PI_2;
-					else if(flipY)
-						sprite.zRotation = M_PI_2;
-				}
-				else
-				{
-					if(flipY)
-						sprite.yScale *= -1;
-					if(flipX)
-						sprite.xScale *= -1;
-				}
-				
+                if (flipDiag) {
+                    if (flipXY == kTileHorizontalFlag) {
+                        sprite.zRotation = -M_PI_2; // rotate clockwise by 90-degree
+                    } else if (flipXY == kTileVerticalFlag) {
+                        sprite.zRotation = M_PI_2;  // rotate counter-clockwise by 90-degree
+                    } else if (flipXY == (kTileHorizontalFlag | kTileVerticalFlag)) {
+                        sprite.zRotation = -M_PI_2; // rotate clockwise by 90-degree
+                        sprite.xScale *= -1;        // hozontal flip
+                    } else {
+                        sprite.zRotation = M_PI_2;  // rotate counter-clockwise by 90-degree
+                        sprite.xScale *= -1;        // hozontal flip
+                    }
+                } else {
+                    if (flipXY & kTileHorizontalFlag) {
+                        sprite.xScale *= -1; // hozontal flip
+                    }
+                    if (flipXY & kTileVerticalFlag) {
+                        sprite.yScale *= -1; // vertical flip
+                    }
+                }
+                				
 				// add sprite to correct node for this tileset
 				SKNode* layerNode = layerNodes[tilesetInfo.name];
 				if (!layerNode) {
@@ -1252,7 +1257,7 @@
 				int x = 0;
 				for (NSString* gid in self.gidData)
 				{
-					layer.tiles[x] = [gid intValue];
+					layer.tiles[x] = [gid longLongValue];
 					x++;
 				}
 			}
