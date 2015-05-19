@@ -57,8 +57,8 @@
 	// invert y axis
 	inPoint.y = [self layerHeight] - inPoint.y;
 	
-	int x = inPoint.x / _mapTileSize.height;
-	int y = (int)inPoint.y / _mapTileSize.width;
+	int x = inPoint.x / _mapTileSize.width;
+	int y = inPoint.y / _mapTileSize.height;
 	
 	return CGPointMake(x, y);
 }
