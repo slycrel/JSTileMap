@@ -383,15 +383,23 @@
 {
 	NSMutableString *str = [NSMutableString string];
 	
+	// header row
+	[str appendString:@" grid  "];
+	for (int i = 0; i < _layerGridSize.width; i++)
+	{
+		[str appendFormat:@"%3d", i];
+	}
+	[str appendString:@"\r"];
+	
 	for (int x = 0; x < _layerGridSize.width * _layerGridSize.height; x++)
 	{
 		if (x % (int)(_layerGridSize.width) == 0)
-			[str appendString:@"\r"];
+			[str appendFormat:@"\r %3ld   ", lrint(x / _layerGridSize.width)];
 		
-		[str appendFormat:@"%d_", _tiles[x]];
+		[str appendFormat:@"%3d", _tiles[x]];
 	}
 	
-	NSLog(@"Layer '%@':\r%@\r\r", _name, str);
+	NSLog(@"Layer '%@':\r\r%@\r\r", _name, str);
 }
 
 
