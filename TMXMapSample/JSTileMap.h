@@ -91,6 +91,9 @@ typedef enum
 
 -(int)tileGidAtCoord:(CGPoint)coord;
 
+// debugging
+- (void)logLayerGIDs;
+
 @end
 
 @interface TMXImageLayer : NSObject <NSCoding>
@@ -189,5 +192,9 @@ typedef enum
 
 -(TMXTilesetInfo*)tilesetInfoForGid:(int)gID;
 -(NSDictionary*)propertiesForGid:(int)gID;
+
+// debugging
+- (void)logGIDs;
+
 
 @end

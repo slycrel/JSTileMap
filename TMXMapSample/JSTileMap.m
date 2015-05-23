@@ -378,6 +378,23 @@
   return self;
 }
 
+
+- (void)logLayerGIDs
+{
+	NSMutableString *str = [NSMutableString string];
+	
+	for (int x = 0; x < _layerGridSize.width * _layerGridSize.height; x++)
+	{
+		if (x % (int)(_layerGridSize.width) == 0)
+			[str appendString:@"\r"];
+		
+		[str appendFormat:@"%d_", _tiles[x]];
+	}
+	
+	NSLog(@"Layer '%@':\r%@\r\r", _name, str);
+}
+
+
 @end
 
 @implementation TMXObjectGroup
@@ -927,6 +944,19 @@
   return self;
 }
 
+
+#pragma mark - debugging
+
+
+- (void)logGIDs
+{
+	for (TMXLayerInfo *layerInfo in _layers)
+	{
+		[layerInfo logLayerGIDs];
+	}
+	
+}
+
 #pragma mark - parsing
 
 
@@ -1257,7 +1287,7 @@
 				int x = 0;
 				for (NSString* gid in self.gidData)
 				{
-					layer.tiles[x] = [gid longLongValue];
+					layer.tiles[x] = (int)[gid longLongValue];
 					x++;
 				}
 			}
