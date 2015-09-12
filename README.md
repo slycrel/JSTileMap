@@ -42,3 +42,6 @@ use tile objects you should be able to use isometric maps.
 
 Mac support works but there are points / pixels issues with the atlas images.  Should
 be considered beta.
+
+tvOS support appears to work out of the box -- make sure you include the zlib 
+library included in the tvOS SDK.
