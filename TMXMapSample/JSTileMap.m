@@ -38,6 +38,10 @@
 @property (nonatomic,strong) NSMutableDictionary* textureCache;
 @end
 
+@interface TMXLayer ()
+@property (nonatomic,strong) NSMutableDictionary* spriteCache;
+@end
+
 
 #pragma mark -
 
@@ -90,8 +94,15 @@
 
 - (SKSpriteNode*)tileAtCoord:(CGPoint)coord
 {
-  NSString* nodeName = [NSString stringWithFormat:@"*/%d",(int)(coord.x + coord.y * _layerInfo.layerGridSize.width)];
-  return (SKSpriteNode*)[self childNodeWithName:nodeName];
+	NSString* nodeName = [NSString stringWithFormat:@"%d",(int)(coord.x + coord.y * _layerInfo.layerGridSize.width)];
+	SKSpriteNode* sprite = self.spriteCache[nodeName];
+	if (!sprite)
+	{
+		nodeName = [NSString stringWithFormat:@"*/%d",(int)(coord.x + coord.y * _layerInfo.layerGridSize.width)];
+		sprite = (SKSpriteNode*)[self childNodeWithName:nodeName];
+	}
+	
+	return sprite;
 }
 
 
@@ -111,7 +122,10 @@
 
 		SKNode* tileNode = [self tileAtCoord:coord];
 		if(tileNode)
+		{
+			[self.spriteCache removeObjectForKey:tileNode.name];
 			[tileNode removeFromParent];
+		}
 	}
 }
 
@@ -134,7 +148,8 @@
 +(id) layerWithTilesetInfo:(NSArray*)tilesets layerInfo:(TMXLayerInfo*)layerInfo mapInfo:(JSTileMap*)mapInfo
 {
 	TMXLayer* layer = [TMXLayer node];
-  layer.map = mapInfo;
+	layer.map = mapInfo;
+	layer.spriteCache = [NSMutableDictionary dictionary];
 
 	// basic properties from layerInfo
 	layer.layerInfo = layerInfo;
@@ -178,6 +193,7 @@
 				SKTexture* texture = [tilesetInfo textureForGid:gID];
 				SKSpriteNode* sprite = [SKSpriteNode spriteNodeWithTexture:texture];
 				sprite.name = [NSString stringWithFormat:@"%d",(int)(col + row * layerInfo.layerGridSize.width)];
+				layer.spriteCache[sprite.name] = sprite;
 
 				// make sure it's in the right position.
 				if (mapInfo.orientation == OrientationStyle_Isometric)
