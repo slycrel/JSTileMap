@@ -198,8 +198,20 @@
 				// make sure it's in the right position.
 				if (mapInfo.orientation == OrientationStyle_Isometric)
 				{
-					sprite.position = CGPointMake((layer.mapTileSize.width / 2.0) * (layerInfo.layerGridSize.width + col - row - 1),
-												  (layer.mapTileSize.height / 2.0) * ((layerInfo.layerGridSize.height * 2 - col - row) - 2) );
+					// if the tile isn't the same size as the standard map tiles, we need to adjust the positioning to be in the center of the sprite.
+					CGFloat widthOffset = 0;
+					CGFloat heightOffset = 0;
+					if (tilesetInfo.tileSize.width > layer.mapTileSize.width)
+						widthOffset = (tilesetInfo.tileSize.width - layer.mapTileSize.width) / 2.0;
+					else
+						widthOffset =	(layer.mapTileSize.width - tilesetInfo.tileSize.width) / 2.0;
+					if (tilesetInfo.tileSize.height > layer.mapTileSize.height)
+						heightOffset = (tilesetInfo.tileSize.height - layer.mapTileSize.height) / 2.0;
+					else
+						heightOffset = (layer.mapTileSize.height - tilesetInfo.tileSize.height) / 2.0;
+					
+					sprite.position = CGPointMake((layer.mapTileSize.width / 2.0) * (layerInfo.layerGridSize.width + col - row - 1) + widthOffset,
+																				(layer.mapTileSize.height / 2.0) * ((layerInfo.layerGridSize.height * 2 - col - row) - 2) + heightOffset);
 				}
 				else
 				{
