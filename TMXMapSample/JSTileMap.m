@@ -107,6 +107,28 @@
 
 
 //#warning need to write setTileGidAt:
+- (void)setTileGid:(NSInteger)gID at:(CGPoint)coord
+{
+    NSInteger idx = coord.x + (coord.y * self.layerInfo.layerGridSize.width);
+    
+    // bounds check, invalid GID if out of bounds
+    if (idx > (_layerInfo.layerGridSize.width * _layerInfo.layerGridSize.height) || idx < 0){
+        NSAssert(true, @"index out of bounds!");
+        return;
+    }
+    
+    TMXTilesetInfo* tilesetInfo = [self.map tilesetInfoForGid:gID];
+    [self.tileInfo addObject:tilesetInfo];
+    
+    SKSpriteNode *tile = [self tileAtCoord:coord];
+    if (tilesetInfo && tile){
+        SKTexture* texture = [tilesetInfo textureForGid:gID];
+        if (texture){
+            [tile setTexture:texture];
+            _layerInfo.tiles[ idx ] = gID;
+        }
+    }
+}
 
 
 -(void)removeTileAtCoord:(CGPoint)coord
