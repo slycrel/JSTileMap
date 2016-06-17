@@ -1,9 +1,8 @@
 JSTileMap is a TMX Map viewer for SpriteKit
 =========
 
-** Note:  if you are making an iOS only app, consider using apple's 
-new SpriteKit tilemap functionality in iOS 10.  See this session 
-from [WWDC 2016](https://developer.apple.com/videos/play/wwdc2016/610/) for more about this.
+** Note:  Consider using apple's new SpriteKit tilemap functionality where possible.  
+See [this session from WWDC 2016](https://developer.apple.com/videos/play/wwdc2016/610/) for more about this.
 
 =========
 
